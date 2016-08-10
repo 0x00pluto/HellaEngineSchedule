@@ -7,7 +7,7 @@
     "php-schedule",
     "php-cron"
   ],
-  "description": "HellaEngine schedule php code",
+  "description": "HellaEngine schedule php code .",
   "require": {
     "php": ">=5.5.9",
     "mtdowling/cron-expression": "^1.1"
