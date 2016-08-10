@@ -9,6 +9,7 @@
 namespace hellaEngine\schedule;
 
 /**
+ *
  * Class schedule
  * @package hellaEngine\schedule
  */
