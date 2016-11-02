@@ -9,7 +9,6 @@
 namespace hellaEngine\schedule;
 
 use Cron\CronExpression;
-use hellaEngine\schedule\Exception\scheduleRunTimeException;
 
 /**
  *
@@ -22,6 +21,7 @@ class schedule
      * @param $expression
      * @param \Closure $callback
      * @return bool
+     * @throws \Exception
      */
     static function run($expression, \Closure $callback)
     {
@@ -30,7 +30,7 @@ class schedule
             try {
                 $callback();
             } catch (\Exception $e) {
-                throw new scheduleRunTimeException();
+                throw $e;
             }
 
             return true;
